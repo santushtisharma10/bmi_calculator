@@ -1,0 +1,26 @@
+{% extends "base.html"%}
+{% block head %}
+<link rel="stylesheet" href="{{url_for ('static', filename = 'css/2.css')}}" />
+<link rel="icon" href="data:;base64,iVBORw0KGgo=">
+{% endblock %}
+{% block box %}
+<div class="transbox">
+    <h1><b><a name="Details">Contact the counsellor</a></b></h1>
+    <form action="http://127.0.0.1:5000/2" method="POST">
+
+        <br>
+        <label for="one">
+            <h2 style="color: black;">Enter your name</h2>
+        </label>
+        <input type="text" id="one" name="nm" required>
+        <br>
+        <label for="reason">
+            <h2 style="color: black;">Reason</h2>
+        </label>
+        <textarea id="reason" name="r" rows=5 cols=100 required></textarea>
+        <br><br><br>
+        <input type="submit" id="sub">
+    </form>
+    </fieldset>
+</div>
+{% endblock %}

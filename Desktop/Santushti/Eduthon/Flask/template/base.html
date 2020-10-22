@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>SWADHYAY!</title>
+        <!--link href="swadhyay.css" type="text/css" rel="stylesheet"/-->
+        <!--link rel="stylesheet" href= " {{ url_for('static', filename='css/forindex1.css')}}" /-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+
+  
+        {% block head %}
+
+        {% endblock %}
+        <style>
+            * {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+/*
+body {
+font-family: 'Josefin Sans', sans-serif;
+background-image:url("backdrop.PNG");
+background-repeat: no-repeat;
+background-size: 100% 650%;
+}
+*/
+h2{
+    color: white;
+}
+.navbar {
+    font-size: 18px;    
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    padding-bottom: 10px;
+}
+
+.main-nav {
+    list-style-type: none;
+    display: none;
+}
+.nav-links
+{
+    text-decoration: none;
+    color: rgba(238, 235, 235, 0.918);
+    
+}
+.nav-links:hover{
+    border-bottom: 3px solid #bf55ec;
+}
+.logo{
+    height: 50px;
+    width: 50px;
+    border-radius: 40px;
+}
+.main-nav li {
+    text-align: center;
+    margin: 15px auto;
+}
+
+.logo {
+    display: inline-block;
+    font-size: 22px;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+.navbar-toggle {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    cursor: pointer;
+    color: rgba(247, 243, 243, 0.8);
+    font-size: 24px;
+}
+
+.active {
+    display: block;
+}
+
+@media screen and (min-width: 768px)
+{
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 0;
+        height: 70px;
+        align-items: center;
+    }
+
+    .main-nav {
+        display: flex;
+        margin-right: 30px;
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+
+    .main-nav li {
+        margin: 0;
+    }
+
+    .nav-links {
+        margin-left: 40px;
+    }
+
+    .logo {
+        margin-top: 0;
+    }
+
+    .navbar-toggle {
+        display: none;
+    }
+
+    .logo:hover,
+    .nav-links:hover {
+        color: rgb(243, 239, 239);
+    }
+}
+
+.button {
+    background-color: black;
+    border: none;
+    color: white;
+    font-size: 14px;
+    text-decoration: none;
+    display: inline-block;
+    position:absolute;
+    transition: .8s ease;
+    top: -120%;
+    left: 10%;
+    cursor: pointer;
+    padding: 10px 30px;
+     
+  }
+
+footer{
+    position: fixed;
+    bottom: 0px;
+    height: 180px;
+    padding-bottom: 0px;
+}
+.footer-distributed{
+    height: 180px;
+    position: fixed;
+    bottom: 0px;
+	background-color: #3e3341;
+	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+	box-sizing: border-box;
+	width: 100%;
+	text-align: left;
+	font: bold 16px sans-serif;
+ 
+	padding: 35px 50px;
+	margin-top: 80px;
+}
+ .footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right{
+	display: inline-block;
+	vertical-align: top;
+}
+ 
+.footer-distributed .footer-left{
+	width: 40%;
+}
+ 
+.footer-distributed .title{
+	color:  #ffffff;
+	font: normal 36px 'Cookie', cursive;
+	margin: 0;
+}
+ 
+.footer-distributed h3 span{
+	color:  yellow;
+}
+ 
+.footer-distributed .footer-links{
+	color:  #ffffff;
+	margin: 20px 0 12px;
+	padding: 0;
+}
+ 
+.footer-distributed .footer-links a{
+	display:inline-block;
+	line-height: 1.8;
+	text-decoration: none;
+	color:  inherit;
+}
+ .footer-distributed .footer-company-name{
+	color:  #8f9296;
+	font-size: 14px;
+	font-weight: normal;
+	margin: 0;
+}
+  
+.footer-distributed .footer-center{
+	width: 35%;
+}
+ 
+.footer-distributed .footer-center i{
+	background-color:  #33383b;
+	color: #ffffff;
+	font-size: 25px;
+	width: 38px;
+	height: 38px;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 42px;
+	margin: 0px 0px;
+	vertical-align: middle;
+}
+ 
+.footer-distributed .footer-center i.fa-envelope{
+	font-size: 17px;
+	line-height: 38px;
+}
+ 
+.footer-distributed .footer-center p{
+	display: inline-block;
+	color: #ffffff;
+	vertical-align: middle;
+	margin:0;
+}
+ 
+.footer-distributed .footer-center p span{
+	display:block;
+	font-weight: normal;
+	font-size:14px;
+	line-height:2;
+}
+ 
+.footer-distributed .footer-center p a{
+	color:  #5383d3;
+	text-decoration: none;;
+}
+ 
+.footer-distributed .footer-right{
+	width: 20%;
+}
+ 
+.footer-distributed .footer-company-about{
+	line-height: 20px;
+	color:  #92999f;
+	font-size: 14px;
+	font-weight: normal;
+	margin: 0;
+}
+
+.footer-company-about h4{
+	line-height: 2;
+	color:  #92999f;
+	font-size: 14px;
+	font-weight: normal;
+	margin: 0;
+}
+ 
+.footer-distributed .footer-company-about span{
+	display: block;
+    font-size: 1.5em;
+    line-height: 1;
+	font-weight: bold;
+	color: #ffffff;
+	
+}
+.footer-distributed .footer-icons{
+	margin-top: 25px;
+}
+ 
+.footer-distributed .footer-icons a{
+	display: inline-block;
+	width: 35px;
+	height: 35px;
+	cursor: pointer;
+	background-color:  #3e3341;
+	border-radius: 2px;
+ 
+	font-size: 20px;
+	color: #ffffff;
+	text-align: center;
+	line-height: 35px;
+ 
+	margin-right: 3px;
+	margin-bottom: 5px;
+}
+
+@media (max-width: 768px) {
+ 
+	.footer-distributed{
+        font: bold 14px sans-serif;}
+    /*body {
+       background-image:url("backdrop.PNG");
+       background-repeat: no-repeat;
+       background-size: cover;
+        }
+        */
+ 
+	.footer-distributed .footer-left,
+	.footer-distributed .footer-center,
+	.footer-distributed .footer-right{
+		display: block;
+		width: 100%;
+		margin-bottom: 40px;
+		text-align: center;
+	}
+ 
+	.footer-distributed .footer-center i{
+		margin-left: 0;
+	}
+}
+        </style>
+    </head>
+    <body>
+        
+        <nav class="navbar">
+        <span class="navbar-toggle" id="js-navbar-toggle">
+            <i class="fas fa-bars"></i>
+        </span>
+        <img src="static/css/swadhyay.PNG" class="logo">
+        
+        <ul class="main-nav" id="js-menu">
+            <li>
+                <a href="http://127.0.0.1:5000/" class="nav-links">HOme</a>
+            </li>
+            <li>
+                <a href="http://127.0.0.1:5000/2" class="nav-links">counsellor</a>
+            </li>
+            <li>
+                <a href="#" class="nav-links">About Us</a>
+            </li>
+            <li>
+                <a href="#" class="nav-links">Contact Us</a>
+            </li>
+            <li>
+                <a href="http://127.0.0.1:5000/3" class="nav-links">Google lens</a>
+            </li>
+        </ul>
+    </nav>
+
+
+    <div style="position: relative; padding-bottom: 200px; " >
+        {% block box %}
+        {% endblock %}
+    </div>
+  
+
+
+    
+    <footer class="footer-distributed">
+
+		<div class="footer-left">
+
+			<h3 class="title"><span>SWADHYAY!</span></h3>
+
+			<p class="footer-links">
+				<a href="#">Home</a>
+				<a href="#">Product</a>
+				<a href="#">Blog</a>
+				<a href="../About/index.html">About</a>
+				<a href="../Contact/contact.html">Contact</a>
+
+			</p>
+			<p class="footer-company-name">SWADHYAY! &copy; 2020</p>
+
+		</div>
+       <!-- <button class="button">KNOW MORE </button>-->
+		<div class="footer-center">
+			<span class="footer-company-about"></span>
+					<h2>Resources</h2>
+				</span>
+			<span class="footer-company-about">
+				<h4>Disclaimer</h4>
+			</span>             
+
+			<span class="footer-company-about">
+				<h4>Reports</h4>
+			</span>
+		</div>
+
+		<div class="footer-right">
+			<p class="footer-company-about">
+				<span>About the company</span>
+				Bringing all the Career Paths in various fields and learning courses under one roof. 
+			</p>
+
+			<div class="footer-icons">
+
+				<a href="#"><i class="fa fa-facebook"></i></a>
+				<a href="#"><i class="fa fa-twitter"></i></a>
+				<a href="#"><i class="fa fa-linkedin"></i></a>
+				<a href="#"><i class="fa fa-github"></i></a>
+
+			</div>
+
+		</div>
+    
+	</footer>
+
+    </body>
+</html>

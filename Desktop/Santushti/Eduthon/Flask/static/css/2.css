@@ -1,0 +1,21 @@
+body {
+    
+    margin: 0;
+    padding: 0;
+    background-image: url("ment.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+div.transbox {
+    
+    font-weight: bolder;
+    color: rgba(0, 0, 0, .9);
+    float: center;
+    margin: 50px 200px;
+    height: 300px;
+    width: 800px;
+    padding:10px 10px 10px 10px;
+    background-color: rgb(245, 221, 177);
+    box-sizing: border-box;
+    opacity: 0.6;
+}

@@ -1,0 +1,50 @@
+{%extends "base.html" %}
+
+{% block head%}
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="icon" href="data:;base64,iVBORw0KGgo=">
+    <link rel="stylesheet" href= " {{ url_for('static', filename='css/3.css')}}" />
+{% endblock %}
+
+{% block box%}
+<div class ="container">
+
+    <h1 >
+        😊  Pikachu will help you solve our query  😊
+    </h1>
+</div>
+<div class = "container">
+     <form action="http://127.0.0.1:5000/3" method="POST" enctype="multipart/form-data" >
+
+        <div class="form-group" >
+          
+          <div class="custom-file">
+            <input type="file" class="custom-file-input" name="file" required>
+            <label class="custom-file-label" for="file"> Select image...</label>
+          </div>
+        </div>
+        
+        <button type="submit" class="btn btn-primary">  Submit  </button>
+
+    </form>
+</div>
+<br>
+
+{% if lis %}
+
+<div class="container">
+    <!--img src="img_avatar.png" alt="Avatar" style="width:100%"-->
+    <div class="card">
+      {% for index in lis %}
+      <a href = "{{index}}">Link</a>
+      <br>
+      {% endfor %}
+    </div>
+
+  </div>
+  <br>
+  <br>
+
+{% endif %}
+    {% endblock%}
+

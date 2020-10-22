@@ -1,0 +1,12 @@
+body {
+    
+    margin: 0;
+    padding: 0;
+    background-image: url("pika.PNG");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+h1 {
+
+    color : white;
+}

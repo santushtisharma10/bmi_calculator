@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+<link rel="stylesheet" href="bootstrap-multiselect.css" type="text/css"/>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<script   src="https://code.jquery.com/jquery-3.2.1.min.js"   integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="   crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script> 
+<script type="text/javascript" src="bootstrap-multiselect.js"></script>
+<!--link rel="stylesheet" href="new.css"-->
+<!--link rel="stylesheet" href="bootstrap-multiselect.css" type="text/css"/>
+<link rel="stylesheet" href="static/css/new.css"-->
+<link rel="stylesheet" href= " {{ url_for('static', filename='css/new.css')}}" />
+
+</head>
+<body>
+     <form action="/" method="POST">
+     <select multiple data-placeholder="Choose Symptoms" id="mymultiselect" name="mymultiselect">
+        <option value="0">'s node</option>
+        <option value ="1">Murphy's sign</option>
+        <option value ="2">Stahli's line</option>
+        <option value ="3">abdomen acute	</option>	
+        <option value ="4">abdominal bloating</option>
+        <option value ="5">abdominal tenderness</option>		
+        <option value ="6">abnormal sensation</option>
+        <option value ="7">abnormally hard consistency</option>	
+        <option value ="8">abortion</option>	
+        <option value ="9">abscess bacterial</option>	
+        <option value ="10">absences finding</option>		
+        <option value ="11">achalasia	</option>
+        <option value ="12"></option>
+        <option value ="13">adverse effect</option>adverse effect
+        <option value ="14">adverse reaction</option>	
+        <option value ="15">agitation</option>	
+        <option value ="16">air fluid level</option>	
+         <option value="17">   alcohol binge episode</option>	
+        <option value="18"> alcoholic withdrawal symptoms</option>
+        <option value="19">ambidexterity</option>
+         <option value="20">angina pectoris</option>
+         <option value="21">anorexia</option>
+          <option value="22"> anosmia</option>
+           <option value="23"> aphagia</option>
+           <option value="24" > apyrexial</option>
+            <option value="25">arthralgia</option>
+             <option value="26">ascites</option>
+            <option value="27"> asterixis</option>
+             <option value="28">asthenia </option>
+             <option value="29">asymptomatic</option>
+             <option value="30"> ataxia</option>
+              <option value="31"> atypia</option>
+              <option value="32"> aura </option>
+               <option value="33">awakening early</option>
+               <option value="34">barking cough</option>
+               <option value="35"> bedridden</option>
+               <option value="36"> behavior hyperactive	</option>
+               <option value="37"> behavior showing increased motor activity</option>
+                <option value="38">blackout</option>	
+               <option value="39"> blanch </option>	
+                <option value="40">bleeding of vagina </option>
+              <option value="41"> bowel sounds decreased</option>	
+              <option value="42">bradycardia </option>
+              <option value="43">    bradykinesia</option>	
+              <option value="44">      breakthrough pain	</option>
+              <option value="45"> breath sounds decreased	</option>
+              <option value="46"> breath-holding spell </option>	
+              <option value="47"> breech presentation </option>
+              <option value="48"> bruit	</option>
+              <option value="49"> burning sensation	</option>
+              <option value="50">cachexia	</option>
+               <option value="51"> cardiomegaly	</option>
+              <option value="52"> cardiovascular event</option>	
+              <option value="53"> cardiovascular finding</option>
+               <option value="54"> catatonia </option>
+               <option value="55"> catching breath </option>	
+               <option value="56"> charleyhorse	</option>
+               <option value="57"> chest discomfort </option>	
+               <option value="58"> chest tightness	</option>
+               <option value="59"> chill </option>	
+                <option value="60"> choke </option>
+               <option value="61"> cicatrisation </option>	
+                <option value="62"> clammy skin </option>	
+                <option value="63"> claudication </option>
+                <option value="64"> clonus </option>	
+                <option value="65"> clumsiness </option>	
+                <option value="66"> colic abdominal </option>
+                <option value="67"> consciousness clear </option>
+                <option value="68"> constipation</option>	
+                <option value="69"> coordination abnormal </option>
+                <option value="70"> cough</option>	
+                <option value="71"> cushingoid facies</option>	
+                <option value="72"> cushingoidï¿½habitus</option>	
+                <option value="73">    cyanosis	</option>
+                    <option value="74">    cystic lesion</option>	
+                    <option value="75">    debilitation	</option>
+                    <option value="76">    decompensation</option>
+                <option value="77">    decreased body weight	</option>
+                <option value="78">decreased stool caliber</option>
+                <option value="79">   decreased translucency</option>
+                <option value="80"> diarrhea</option>	
+                <option value="81">difficulty	</option>
+                <option value="82">  difficulty passing urine	</option>
+                <option value="83">disequilibrium</option>	
+                <option value="84"> distended abdomen	</option>
+                <option value="85"> distress respiratory </option>
+                <option value="86"> disturbed family </option>	
+                <option value="87"> dizziness </option>	
+                <option value="88"> dizzy spells </option>	
+                <option value="89"> drool </option>	
+                <option value="90">drowsiness </option>	
+                <option value="91"> dullness </option>	
+                <option value="92"> dysarthria </option>	
+                <option value="93"> dysdiadochokinesia </option>	
+                <option value="94">dysesthesia </option>
+                <option value="95">dyspareunia</option>	
+                <option value="96"> dyspnea	</option>
+                <option value="97">dyspnea on exertion </option>
+                <option value="98">  dysuria</option>
+                <option value="99"> ecchymosis </option>	
+                <option value="100"> egophony </option>	
+                <option value="101">  elation </option>	
+                <option value="102">emphysematous change </option>	
+                <option value="103"> energy increased </option>
+                <option value="104"> enuresis </option>	
+                <option value="105"> erythema </option>
+                <option value="106">estrogen use </option>	
+                <option value="107">excruciating pain </option>	
+                <option value="108"> exhaustion </option>	
+                <option value="109"> extrapyramidal sign </option>	
+                <option value="110">extreme exhaustion</option>	
+                <option value="111">facial paresis</option>
+                <option value="112"> fall</option>	
+                <option value="113"> fatigability	</option>
+                <option value="114"> fatigue	</option>
+                <option value="115"> fear of falling	</option>
+                <option value="116"> fecaluria </option>
+                <option value="117"> feces in rectum </option>	
+                <option value="118">    feeling hopeless </option>
+                <option value="119"> feeling strange</option>	
+                <option value="120"> feeling suicidal</option>	
+                <option value="121"> feels hot/feverish</option>
+                <option value="122">  fever	</option>
+                <option value="123"> flare </option>	
+                <option value="124"> flatulence</option>	
+                <option value="125"> floppy </option>	
+                <option value="126"> flushing </option>
+                <option value="127"> focal seizures	</option>
+                <option value="128"> food intolerance</option>
+                <option value="129"> formication</option>	
+                <option value="130"> frail </option>	
+                <option value="131"> fremitus </option>	
+                <option value="132"> frothy sputum </option>	
+                <option value="133"> gag </option>	
+                <option value="134"> gasping for breath </option>	
+                <option value="135"> general discomfort </option>	
+                <option value="136"> general unsteadiness </option>	
+                <option value="137"> giddy mood	</option>
+                <option value="138"> gravida 0 </option>	
+                <option value="139"> gravida 10 </option>	
+                <option value="140"> green sputum </option>	
+                <option value="141"> groggy	</option>
+                <option value="142"> guaiac positive </option>
+                <option value="143"> gurgle </option>	
+                <option value="144"> hacking cough </option>	
+                <option	value="145"> haemoptysis </option>
+                <option value="146"> haemorrhage </option>	
+                <option value="147"> hallucinations auditory </option>	
+                    hallucinations visual	
+                    has religious belief	
+                    headache	
+                    heartburn	
+                    heavy feeling	
+                    heavy legs	
+                    hematochezia	
+                    hematocrit decreased	
+                    hematuria	
+                    heme positive	
+                    hemianopsia 
+                    homonymous	
+                    hemiplegia	
+                    hemodynamically stable	
+                    hepatomegaly	
+                    hepatosplenomegaly	
+                    hirsutism	
+                    history of - blackout	
+                    hoard	
+                    hoarseness	
+                    homelessness	
+                    homicidal thoughts	
+                    hot flush	
+                    hunger	
+                    hydropneumothorax	
+                    hyperacusis	
+                    hypercapnia	
+                    hyperemesis	
+                    hyperhidrosis disorder	
+                    hyperkalemia	
+                    hypersomnia	
+                    hypersomnolence	
+                    hypertonicity	
+                    hyperventilation	
+                    hypesthesia	
+                    hypoalbuminemia	
+                    hypocalcemia result	
+                    hypokalemia	
+                    hypokinesia	
+                    hypometabolism	
+                    hyponatremia	
+                    hypoproteinemia	
+                    hypotension	
+                    hypothermia, natural	
+                    hypotonic	
+                    hypoxemia	
+                    immobile	
+                    impaired cognition	
+                    inappropriate affect	
+                    incoherent	
+                    indifferent mood	
+                    intermenstrual heavy bleeding	
+                    intoxication	
+                    irritable mood	
+                    jugular venous distention	
+                    labored breathing	
+                    lameness	
+                    large-for-dates fetus	
+                    leftï¿½atrialï¿½hypertrophy	
+                    lesion	
+                    lethargy	
+                    lightheadedness	
+                    lip smacking	
+                    loose associations	
+                    low back pain	
+                    lung nodule	
+                    macerated skin	
+                    macule	
+                    malaise	
+                    mass in breast	
+                    mass of body structure	
+                    mediastinal shift	
+                    mental status changes	
+                    metastatic lesion	
+                    milky	
+                    moan	
+                    monoclonal	
+                    monocytosis	
+                    mood depressed	
+                    moody	
+                    motor retardation	
+                    muscle hypotonia	
+                    muscle twitch	
+                    myalgia	
+                    mydriasis	
+                    myoclonus	
+                    nasal discharge present	
+                    nasal flaring	
+                    nausea	
+                    nausea and vomiting	
+                    neck stiffness	
+                    neologism	
+                    nervousness	
+                    night sweat	
+                    nightmare	
+                    no known drug allergies	
+                    no status change	
+                    noisy respiration	
+                    non-productive cough	
+                    nonsmoker	
+                    numbness	
+                    numbness of hand	
+                    oliguria	
+                    orthopnea	
+                    orthostasis	
+                    out of breath	
+                    overweight	
+                    pain	
+                    pain abdominal	
+                    pain back	
+                    pain chest	
+                    pain foot	
+                    pain in lower limb	
+                    pain neck	
+                    painful swallowing	
+                    pallor	
+                    palpitation	
+                    panic	
+                    pansystolic murmur	
+                    para 1	
+                    para 2	
+                    paralyse	
+                    paraparesis	
+                    paresis	
+                    paresthesia	
+                    passed stones	
+                    patient non compliance	
+                    pericardial friction rub	
+                    phonophobia	
+                    photophobia	
+                    photopsia	
+                    pin-point pupils	
+                    pleuritic pain	
+                    pneumatouria	
+                    polydypsia	
+                    polymyalgia	
+                    polyuria	
+                    poor dentition	
+                    poor feeding	
+                    posteriorï¿½rhinorrhea	
+                    posturing	
+                    presence of q wave	
+                    pressure chest	
+                    previous pregnancies 2	
+                    primigravida	
+                    prodrome	
+                    productive cough	
+                    projectile vomiting	
+                    prostate tender	
+                    prostatism	
+                    proteinemia	
+                    pruritus	
+                    pulse absent	
+                    pulsusï¿½paradoxus	
+                    pustule	qt interval 
+                    prolonged	
+                    r wave feature	
+                    rale	
+                    rambling speech	
+                    rapid shallow breathing	
+                    red blotches	
+                    redness	
+                    regurgitates after swallowing	
+                    renal angle tenderness	
+                    rest pain	
+                    retch	
+                    retropulsion	
+                    rhd positive	
+                    rhonchus	
+                    rigor - temperature-associated observation	
+                    rolling of eyes	
+                    room spinning	
+                    satiety early	
+                    scar tissue	
+                    sciatica	
+                    scleralï¿½icterus	
+                    scratch marks	
+                    sedentary	
+                    seizure	
+                    sensory discomfort	
+                    shooting pain	
+                    shortness of breath	
+                    side pain	
+                    sinus rhythm	
+                    sleeplessness	
+                    sleepy	
+                    slowing of urinary stream	
+                    sneeze	
+                    sniffle	
+                    snore	
+                    snuffle	
+                    soft tissue swelling	
+                    sore to touch	
+                    spasm	
+                    speech slurred	
+                    splenomegaly	
+                    spontaneous rupture of membranes	
+                    sputum purulent	
+                    st segment depression	
+                    st segment elevation	
+                    stiffness	
+                    stinging sensation	
+                    stool color yellow	
+                    stridor	
+                    stuffy nose	
+                    stupor	
+                    suicidal	
+                    superimposition	
+                    sweat	
+                    sweating increased	
+                    swelling	
+                    symptom aggravating factors	
+                    syncope	
+                    systolic ejection murmur	
+                    systolic murmur	
+                    t wave inverted	
+                    tachypnea	
+                    tenesmus	
+                    terrify	
+                    thicken	
+                    throat sore	
+                    throbbing sensation quality	
+                    tinnitus	
+                    tired	
+                    titubation	
+                    todd paralysis	
+                    tonic seizures	
+                    transaminitis	
+                    transsexual	tremor	
+                    tremor resting	
+                    tumor cell invasion	
+                    unable to concentrate	
+                    unconscious state	
+                    uncoordination	
+                    underweight	
+                    unhappy	
+                    unresponsiveness	
+                    unsteady gait	
+                    unwell	
+                    urge incontinence	
+                    urgency ofï¿½micturition	
+                    urinary hesitation	
+                    urinoma	
+                    verbal auditory hallucinations	
+                    verbally abusive behavior	
+                    vertigo	
+                    vision blurred	
+                    vomiting	
+                    weepiness	
+                    weight gain	
+                    welt	
+                    wheelchair bound	
+                    wheezing	
+                    withdraw	
+                    worry	
+                    yellow sputum
+
+        <!--option value="1">Stomach ache</option>
+        <option value="2">Headache</option>
+        <option value="3">Rashes</option>
+        <option value="4">Loss of Taste</option>
+        <option value="5">Fever</option-->
+    </select>
+    <br>
+    <input type="submit" name="Submit" value="submit">
+    </form>
+    <!-- dribbble -->
+    <a class="dribbble" href="https://dribbble.com/shots/5112850-Multiple-select-animation-field" target="_blank"><img src="https://cdn.dribbble.com/assets/dribbble-ball-1col-dnld-e29e0436f93d2f9c430fde5f3da66f94493fdca66351408ab0f96e2ec518ab17.png" alt=""></a>
+    <script>
+        $(document).ready(function() {
+
+var select = $('select[multiple]');
+var options = select.find('option');
+
+var div = $('<div />').addClass('selectMultiple');
+var active = $('<div />');
+var list = $('<ul />');
+var placeholder = select.data('placeholder');
+
+var span = $('<span />').text(placeholder).appendTo(active);
+
+options.each(function() {
+    var text = $(this).text();
+    if($(this).is(':selected')) {
+        active.append($('<a />').html('<em>' + text + '</em><i></i>'));
+        span.addClass('hide');
+    } else {
+        list.append($('<li />').html(text));
+    }
+});
+
+active.append($('<div />').addClass('arrow'));
+div.append(active).append(list);
+
+select.wrap(div);
+
+$(document).on('click', '.selectMultiple ul li', function(e) {
+    var select = $(this).parent().parent();
+    var li = $(this);
+    if(!select.hasClass('clicked')) {
+        select.addClass('clicked');
+        li.prev().addClass('beforeRemove');
+        li.next().addClass('afterRemove');
+        li.addClass('remove');
+        var a = $('<a />').addClass('notShown').html('<em>' + li.text() + '</em><i></i>').hide().appendTo(select.children('div'));
+        a.slideDown(400, function() {
+            setTimeout(function() {
+                a.addClass('shown');
+                select.children('div').children('span').addClass('hide');
+                select.find('option:contains(' + li.text() + ')').prop('selected', true);
+            }, 500);
+        });
+        setTimeout(function() {
+            if(li.prev().is(':last-child')) {
+                li.prev().removeClass('beforeRemove');
+            }
+            if(li.next().is(':first-child')) {
+                li.next().removeClass('afterRemove');
+            }
+            setTimeout(function() {
+                li.prev().removeClass('beforeRemove');
+                li.next().removeClass('afterRemove');
+            }, 200);
+
+            li.slideUp(400, function() {
+                li.remove();
+                select.removeClass('clicked');
+            });
+        }, 600);
+    }
+});
+
+$(document).on('click', '.selectMultiple > div a', function(e) {
+    var select = $(this).parent().parent();
+    var self = $(this);
+    self.removeClass().addClass('remove');
+    select.addClass('open');
+    setTimeout(function() {
+        self.addClass('disappear');
+        setTimeout(function() {
+            self.animate({
+                width: 0,
+                height: 0,
+                padding: 0,
+                margin: 0
+            }, 300, function() {
+                var li = $('<li />').text(self.children('em').text()).addClass('notShown').appendTo(select.find('ul'));
+                li.slideDown(400, function() {
+                    li.addClass('show');
+                    setTimeout(function() {
+                        select.find('option:contains(' + self.children('em').text() + ')').prop('selected', false);
+                        if(!select.find('option:selected').length) {
+                            select.children('div').children('span').removeClass('hide');
+                        }
+                        li.removeClass();
+                    }, 400);
+                });
+                self.remove();
+            })
+        }, 300);
+    }, 400);
+});
+
+$(document).on('click', '.selectMultiple > div .arrow, .selectMultiple > div span', function(e) {
+    $(this).parent().parent().toggleClass('open');
+});
+
+});
+
+    </script>
+    
+</body>

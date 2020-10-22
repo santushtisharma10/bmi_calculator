@@ -1,0 +1,88 @@
+body, html {
+    height: 100%;
+  }
+  
+  .bg {
+    /* The image used */
+    background-image: url("pexels-photo-2873277.jpeg");
+  
+    /* Full height */
+    height: 100%;
+  
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+/*
+body{
+    
+ 
+background-image: url("bewitched-book-magic-glows-darkness-260nw-393367726.webp");   
+background-size: cover;
+background-repeat: no-repeat;  
+ 
+       
+}
+*/
+a{
+     border:ridge;
+     border-width: 10px;
+     border-radius: 80px;  
+     font-size: 30px; 
+     background-color: rgb(230, 221, 221);
+     padding:10px 30px;
+     font-family: Georgia;
+}
+
+a:hover{
+    background-color: rgb(243, 152, 16);
+    
+}
+
+
+li{
+    list-style: none;
+    float: left;
+    padding:0px 60px;
+    /*background-color:
+    border: ridge;
+    border-width: 8px;*/
+    color:  rgb(230, 221, 221);
+    
+    
+}
+.logo
+{ 
+     height:500px;
+     font-family: cursive;
+     font-size: 20px;  
+    
+}
+.pt{
+  transition-duration: 200ms;
+  transition-property: all;
+}
+.pt:hover{
+  color: rgb(230, 116, 10);
+  text-transform: capitalize;
+  
+  
+}
+.end{
+    
+  height:100px;
+ 
+  
+  
+}
+
+li:hover{
+    background-color: rgb(13, 61, 61);
+}
+p{
+  font-family:cursive;
+font-size: 55px;
+  color:  rgb(230, 221, 221);
+    
+}

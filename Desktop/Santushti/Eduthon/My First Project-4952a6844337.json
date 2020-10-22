@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "mimetic-oxide-288704",
+  "private_key_id": "4952a6844337b664e592d742a8baa2884d5025ff",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQC15Xnp7Qn/BCoj\nSNVQSaEyMdnk9+qzw8TweTqbkve4vtqivarcXD3EYGUQV6rTO2NoAT4xDx2c/a9x\nwhBgN8pS81GoVwuJfqp36b0zfn+v6ub7DFQbah2PE2OU7Zzc4vBZZo4AG1MvbQE/\n6uFIYkzWhYxksRHwjGu4AWg5Q69Dlz98/NUoBJr+x7EUvP5yW7IHv8lxtcT3bEp4\nE4cClvhNMGdJmf4kFz8OimbRJu79D7i5jtuguCLexyju6GGgLmDR/MvVqogba22/\ngEbqB5kXQY5yDqreiaIuLynsOV8OYU+W69HReM/yx0oUPcYpQ9IffC9maWZkB6N4\nbyJGIJW9AgMBAAECggEAAJyNOgsboymEFsBHmfsquTzPqw8Q+++8OW6+6Aeoy4yL\nYaFaR162r8f/LvyMd3oAoziLLqZgBsds5T4Dc2oHRRt0+n2TGAWT/yPgXfbz6PHU\n5aKB+eGecyexMwP601yeoD5RsJBm9DGH9TYN8ddaw3He1KEqb/DuP8fJbj/bAVLU\nYh51fxM9ZkRQ3MvBu//gNxq4HYCOSoK10r02gJeteimNDDKVvF6WxfzXG5cfStJo\nQZdgpER1qhDKNnaIj96MkXGYZXycZkG78Cl4hVFflRWtChCehemuMou6/QKaaci/\nkmKFC8PB8Pg0RjJeVJQ5JOytopuhzYwIZzINtTJK4QKBgQD8bLRSyv3ZH9/Ft6St\nwLNFmLlHyrAUNNXp4TwlQFrUPHSxUF/y1ORf9lRoFtx9/A0Ko8WovrUXdw9tnqpJ\n3K5ftUU/XFT5ab2OxUhXLQqchoTh0Hgk9xKo/7VMnelVHpnPC/7cCyzIvA2F6Nof\nrD1ZIKpzIZ1Uz++3TAelQ9D5KQKBgQC4eQkNjiG0HTQQzRPTfpnYH7Trg2Lhe1L8\n653IOtxmF0jUFlAyepXaKhaDdLLCZnFa0akrjLChc5VTnNV+s+EX+IJJw6+Klmne\nUtIPWr0zB1Xl3T2Ji9PLmwBopSdEvgSq/XUscIvivPJqPTuIullJkviWwZT7rp7C\nFKLbN8HGdQKBgB8i+YtM5ssll2C4KmQUZQissg4c/mM/sTNMSTL/ITUU0AAfPfai\nNBlyNS8xwrj3olQxp2wNOiFO2mRXMgIyan/7yDLsnL63QF6gDzBRqgFsxm9kW62T\nnIWkJSTyRZnuUGKtxB44cqnAKJrgAifuAxM/aEcTWmjfzV36zuaf2uMhAoGANyt7\nmaI4UjWprJyooUfrmsdgxE6289h+KUYOGiQAZkfwb/18Xpxq1KRht07fZ2Rb4l1x\nyqR47tAyiJ8O+qWxXAnmbUko5rm1T9hVGmJ40xoOhoB0Nv6qiOoCZUl/RP/PRZQn\nxvKh412+4icN9wZETcy2q9+ZPuwqbsDdM9KpEUECgYEA98t5vGpj9keYlhaJ5yEK\nbQJi72TWWenZ6AlSsoWg9V/JOSP5JHdOxt0qTaT6uCnHAsihxymx/ZVwzOZodo3T\nEaz/pouBve9LYM9ciJ0kwPA81/C/lm5zi0YgJx8gWQIfFmozd+y+jM1E2btXWs+e\nLpvnGn7nV6BFIVkl9gmohK8=\n-----END PRIVATE KEY-----\n",
+  "client_email": "vision-eduthon-2020@mimetic-oxide-288704.iam.gserviceaccount.com",
+  "client_id": "104914346320873776114",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/vision-eduthon-2020%40mimetic-oxide-288704.iam.gserviceaccount.com"
+}
