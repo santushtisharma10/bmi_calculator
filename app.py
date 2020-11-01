@@ -1,20 +1,29 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, request
 
 app = Flask(__name__)
 
-def calc():
+
+def calc( weight, height):
     bmi = weight/(height**2)
     return bmi
 
-def checkHealth():
 
 @app.route("/")
 def main():
     return render_template("index.html")
-  
-@app.route("/form", method={"GET", "POST"})
+
+
+@app.route("/form", methods={"GET", "POST"})
 def form():
-    return render_template("result.html")
+    return render_template("form.html")
+
+    if request.form =="POST":
+
+
+@app.route("/result")
+def result():
+
+    return render_template("result.html", weight, height)
 
 if __name__ == "__main__":
     app.run(debug=True)
